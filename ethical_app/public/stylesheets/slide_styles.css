@@ -1,0 +1,119 @@
+body {
+  padding-top: 50px;
+}
+
+.deck-container {
+  font-size: 16px;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.75em;
+  line-height: 1.25;
+}
+
+.deck-container > .slide {
+  padding: 0 48px;
+}
+
+.slide {
+  background-color: white;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  /*opacity: 0.4;*/
+}
+
+h1 {
+  font-size: 4.5em;i
+  font-weight: bold;
+  text-align: center;
+  max-height: 100%;
+  padding-top: 0.2em;
+  left: 0;
+  right: 0;
+  font-family: "Courier New";
+  border-bottom-color: #ccc;
+}
+
+h2 {
+  margin-top: 1em;
+  font-size: 2.0em;
+  text-align: center;
+  font-weight: bold;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-family: "Courier New";
+}
+
+h3 {
+  color: #8c0b54; 
+  font-size: 1.5em;
+  text-align: center;
+  font-family: "Courier New";
+}
+
+p {
+  /*text-align: center;*/
+  font-family: "Georgia";
+  padding-bottom: 0.5em;
+  text-align: justify;
+}
+
+
+@media screen and (max-width: 720px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  p {
+    font-size: 0.75em;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  h3 {
+    font-size: 1.0em;
+  }
+
+  p {
+    font-size: 0.60em;
+  }
+}
+
+ul.no-marker {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.eth-val {
+  padding-bottom: 1em;
+  text-align: left;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px; 
+}
+
+img {
+  margin-top: 20px;
+  height: auto;
+  max-width: 100%;
+}
