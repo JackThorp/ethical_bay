@@ -1,20 +1,12 @@
 extends layout
 
 block stylesheets
-  // Required stylesheets for deck.js
-  link(rel='stylesheet', media='screen', href='/deckjs/core/deck.core.css')         
   
-  // Extension stylesheets add or remove as needed
-  link(rel='stylesheet', media='screen', href="/deckjs/extensions/navigation/deck.navigation.css")
-    
-  // Style theme, more available in /themes/style or create one..
-  link(rel='stylesheet', media='screen', href="/stylesheets/slide_styles.css")
-
-  // Transition theme, more available in /themes/transitions or create one.
-  link(rel='stylesheet', media='screen', href="/deckjs/themes/transition/horizontal-slide.css")
-    
-  // Basic black and white print style
-  link(rel='styelsheet', media='print', hre="deckjs/core/print.css")
+  link(rel='stylesheet', media='screen', href='deckjs/core/deck.core.css')         
+  link(rel='stylesheet', media='screen', href="deckjs/extensions/navigation/deck.navigation.css")
+  link(rel='stylesheet', media='screen', href="stylesheets/slide_styles.css")
+  link(rel='stylesheet', media='screen', href="deckjs/themes/transition/horizontal-slide.css")
+  link(rel='styelsheet', media='print', href="deckjs/core/print.css")
 
 
 block header_scripts
@@ -56,7 +48,6 @@ block content
       a.deck-next-link(href="#", title="next") &#8594;
 
   // Required js files
-  script(src="deckjs/jquery.min")
   script(src="deckjs/core/deck.core.js")
 
   // Extension js files.
