@@ -1,0 +1,7 @@
+set ssl:verify-certificate false;
+set ftp:ssl-protect-data true;
+set ftp:ssl-force true;
+set ftps:initial-prot "";
+connect ftp.ethicalbay.coop;
+login admin@ethicalbay.coop;
+ls;
