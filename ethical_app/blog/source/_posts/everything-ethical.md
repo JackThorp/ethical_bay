@@ -1,0 +1,20 @@
+title: Everything Ethical, Ethical Everywhere
+date: 2015-01-25 13:07:38
+author: Bob Thorp
+tags:
+---
+EthicalBay’s founding proposition is simple, lets make it very easy for customers to express their ethical values, lets make it very easy to “buy the good”. The realisation of the proposition will be an online marketplace connecting enterprises and citizens choosing to trade ethical values.
+
+People and businesses can, of course, act ethically now. There are lots of tools and initiatives providing information and assurance, along with campaigning platforms from the UK’s [Ethical Consumer](http://www.ethicalconsumer.org/) or [Green America](http://www.greenamerica.org/) to [Fairtrade](http://www.fairtrade.org.uk/) or [Forestry Stewardship Council](http://www.fsc.org/) Certification or the [Trade Justice Movement](http://www.tjm.org.uk/) or [BDS Movement](http://www.bdsmovement.net/). There are also high street and online shops that trade ethical product lines, such as, [Suma](http://www.suma.coop/), [ethicallyessential](http://www.ethicallyessential.coop/), recently established [Spaice](http://www.spaice.com/) (UK) or [ethicalbuying](http://www.ethicalbuying.com.au/). Ethical is a growing market estimated to be worth [£54bn](http://www.ethicalconsumer.org/portals/0/downloads/ethical_consumer_markets_report_2013.pdf) in the UK alone.
+
+But in these days of online, near instant gratification, buying the good seems a lot harder than it ought to be. We want ethical and we want it now: everything ethical and ethical everywhere! We would like to see ethical moving from being exceptional and niche to becoming normal and ubiquitous.
+
+And whilst we’re expanding our expectations, lets run the demand for ethical from goods and services right through to the businesses themselves, right through the full extent of the supply chains. Amongst companies majoring in ethical products its not unsusal to find that the ethics stops at the store front with “business as usual” out back. Other businesses offering ethical brands also fall short. Nestle carries Fairtrade Mark chocolate and coffee but even a glancing look at the impact show it not to be enough! Nestle is a “business as usual” enterprise, sucking value from the global south and disbursing it to the global north. In 2013 [Fairtrade Internationale](http://www.fairtrade.net/fileadmin/user_upload/content/2009/resources/2013-14_AnnualReport_FairtradeIntl_web.pdf) reported a global Fairtrade Premium worth £68m (derived from global Fairtrade sales of £4.3bn) going to the communities of the 1,400,000 farmers and workers covered by Fairtrade agreements. In the same year [Nestle](http://www.nestle.co.uk/asset-library/documents/library/documents/annual_reports/2013-annual-report-en.pdf), one of the worlds biggest food companies, disbursed some £4.2bn of its £6.6bn profits to 250,000 shareholders.  Nestle’s 13 Board members alone received “compensation” totalling some £28m.
+
+This is not a criticism of Fairtrade, it is a demand for bigger, better, faster ethical trade. We should be bold and start to imagine what the world might be like if ethical values were front and centre of our thinking and our actions and not a corporate fig leaf. What would the world be like if more of the “hands on” value creators (We The Workers) ran the enterprises and disbursed the wealth equitably along the supply chain? It might start to be a world where our actions actual “Do No Harm”, where everyone eats, has a toilet, an education and doesn’t feel driven to risk everything in a treacherous sea journey from the “south” to the “north”. If the wealth is equitably disbursed it may be possible to “Be Sustainable” in everyday decision making and behaviour?
+
+[www.ethicalBay.coop](http://www.ethicalbay.coop) became a workers cooperative in October 2014 and is currently an open invitation to the cooperative and ethical communities to build a truly ethical trading place.
+
+Anyone who wishes to help “raise the barn” contact us through the web site or [welcome@ethcialbay.coop](mailto:welcome@ethcialbay.coop).
+
+Bob

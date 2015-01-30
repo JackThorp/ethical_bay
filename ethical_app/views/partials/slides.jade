@@ -1,0 +1,60 @@
+extends layout
+
+block stylesheets
+  
+  link(rel='stylesheet', media='screen', href='/deckjs/core/deck.core.css')         
+  link(rel='stylesheet', media='screen', href="/deckjs/extensions/navigation/deck.navigation.css")
+  link(rel='stylesheet', media='screen', href="/stylesheets/slide_styles.css")
+  link(rel='stylesheet', media='screen', href="/deckjs/themes/transition/horizontal-slide.css")
+  link(rel='styelsheet', media='print', href="/deckjs/core/print.css")
+
+
+block header_scripts
+  // Required modeniser file.
+  script(type='application/javascript', src="/deckjs/modernizr.custom.js")
+  script(type='application/javascript', src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
+
+
+block content
+ 
+  // Page header±
+  .deck-container
+    section.slide
+      block slide1
+       
+    section.slide
+      block slide2
+        
+    section.slide
+      block slide3             
+        
+    section.slide
+      block slide4
+
+    section.slide
+      block slide5       
+        
+    section.slide
+      block slide6
+
+    section.slide
+      block slide7       
+    
+    section.slide
+      block slide8
+
+    div(aria-role="navigation")
+      a.deck-prev-link(href="#", title="previous") &#8592;
+      a.deck-next-link(href="#", title="next") &#8594;
+
+  // Required js files
+  script(src="/deckjs/core/deck.core.js")
+
+  // Extension js files.
+  script(src="/deckjs/extensions/navigation/deck.navigation.js")
+  
+  script.
+    $(function() {
+      $.deck('.slide');
+    });
+

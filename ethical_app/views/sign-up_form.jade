@@ -1,56 +1,48 @@
-extends layout
+extends partials/layout
 
 block content
 
   link(href="https://cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css")
-  link(rel='stylesheet', type='text/css', href='stylesheets/form_styles.css')
+  link(rel='stylesheet', type='text/css', href='/stylesheets/form_styles.css')
 
-  .row
-    .col-xs-10.col-xs-offset-1.col-md-8.col-md-offset-2#form-outer
-      h1
-        span.lblue e
-        span.lgreen t
-        span.red h
-        span.blue i
-        span.green c
-        span.orange a
-        span.purple l
-        span.lblue Bay
-        |  sign-up
-      #form.rounded-6
-        #form-content.rounded-6
-          #form-welcome For more information, subscribe to our mailing list and stay posted! 
-          form.validate#mc-embedded-subscribe-form(action="//ethicalbay.us9.list-manage.com/subscribe/post?u=5016cb7738a96883cbcd4eec2&amp;id=f0668f6c23", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
+  .container.content-body
+    .row
+      .col-sm-10.col-sm-offset-1.col-xs-12
+        h1.page-header.lblue Sign Up
+        .rounded-48.bracket-content-frame.bracket-frame-border.lblue_bg
+          .rounded-24.content-holder
+            p For more information, subscribe to our mailing list and stay posted! 
+            form.validate#mc-embedded-subscribe-form(action="//ethicalbay.us9.list-manage.com/subscribe/post?u=5016cb7738a96883cbcd4eec2&amp;id=f0668f6c23", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
             
-            .mergeTable#mergeTable
+              .mergeTable#mergeTable
               
-              .mergeRow
-                label(for="mce-EMAIL") Email Address 
-                  span.asterix *
-                .field-group
-                  input(type="email", name="EMAIL", value="")
+                .mergeRow
+                  label(for="mce-EMAIL") Email Address 
+                    span.asterix *
+                  .field-group
+                    input(type="email", name="EMAIL", value="")
               
-              .mergeRow
-                label(for="mce-FNAME") First Name 
-                .field-group
-                  input(type="text", name="FNAME", value="", class="")
+                .mergeRow
+                  label(for="mce-FNAME") First Name 
+                  .field-group
+                    input(type="text", name="FNAME", value="", class="")
               
-              .mergeRow
-                label(for="mce-LNAME") Last Name 
-                .field-group
-                  input(type="text", name="SNAME", value="", class="")
+                .mergeRow
+                  label(for="mce-LNAME") Last Name 
+                  .field-group
+                    input(type="text", name="SNAME", value="", class="")
               
-              .clear#mce-responses
-                .response#mce-error-response(style="display:none")
-                .response#mce-success-response(style="display:none")
-            
-            // Real people should not fill this in and expect good things.
-            .hidden-from-view
-              input(type="text", name="b_5016cb7738a96883cbcd4eec2_f0668f6c23", tabindex="-1" value="")
+                .clear#mce-responses
+                  .response#mce-error-response(style="display:none")
+                  .response#mce-success-response(style="display:none")
+              
+              // Real people should not fill this in and expect good things.
+              .hidden-from-view
+                input(type="text", name="b_5016cb7738a96883cbcd4eec2_f0668f6c23", tabindex="-1" value="")
 
-            .submit-container.clear
-              input.button(type="submit", name="submit", value="Subscribe")
-  
+              .submit-container.clear
+                input.button(type="submit", name="submit", value="Subscribe")
+
   script(type='text/javascript', src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
   script(type='text/javascript').
     (function($) {

@@ -22,11 +22,9 @@ body {
 }
 
 h1 {
-  font-size: 4.5em;i
-  font-weight: bold;
+  font-size: 4.5em;
   text-align: center;
   max-height: 100%;
-  padding-top: 0.2em;
   left: 0;
   right: 0;
   font-family: "Courier New";
@@ -112,8 +110,13 @@ ul.no-marker {
   padding-top: 10px; 
 }
 
+#coop_marque {
+  width: 350px;
+}
+
 img {
   margin-top: 20px;
   height: auto;
   max-width: 100%;
 }
+

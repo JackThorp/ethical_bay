@@ -2,8 +2,16 @@
 	background-color: #fffb19;
 }
 
+.white_bg {
+  background-color: white;
+}
+
 .lblue {
   color: #0492b3;
+}
+
+.lblue_bg {
+  background-color: #0492b3;
 }
 
 .lgreen {
@@ -14,6 +22,10 @@
   color: #eb2700;
 }
 
+.red_bg {
+  background-color: #eb2700;
+}
+
 .blue {
   color: #465dc7;
 }
@@ -22,12 +34,41 @@
   color: #04945d;
 }
 
+.green_bg {
+  background-color: #04945d;
+}
+
 .orange {
   color: #ff8205;
 }
 
+.orange_bg {
+  background-color: #ff8205;
+}
+
+
 .purple {
   color: #8c0b54;
+}
+
+.rounded-6 {
+  border-radius: 6px;
+}
+
+.rounded-12 {
+  border-radius: 12px;
+}
+
+.rounded-48 {
+  border-radius: 48px;
+}
+
+.rounded-20 {
+  border-radius: 20px;
+}
+
+.rounded-24 {
+  border-radius: 24px;
 }
 
 #nav-container {
@@ -38,37 +79,47 @@
 .navbar-label {
   font-size: 1.5em;	
 }
-
-.navbar-collapse.collapse {
-  display: block !important;
+.content-body {
+  margin-top: 50px;
 }
 
-.navbar-nav>li, .navbar-nav {
-  float: left !important;
+/* GENERAL STYLES FOR HEADINGS AND LISTS */
+
+.page-header {
+  text-align: center;
+  border-bottom-color: #ccc;
 }
 
-.navbar-nav.navbar-right:last-child {
-  margin-right: -15px !important;
+.hat-content-frame {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 5% 0%;
 }
 
-.navbar-right {
-  float: right !important;
+.hat-frame-border {
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
-.navbar-collapse.collapse {
-  display: block !important;
+.bracket-content-frame {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 0 5%;
 }
 
-.navbar-nav>li, .navbar-nav {
-  float: left !important;
+.bracket-frame-border {
+  padding-top: 2px;
+  padding-bottom: 2px;
 }
 
-.navbar-nav.navbar-right:last-child {
-  margin-right: -15px !important;
+.content-holder {
+  background-color: white;
+  padding: 1% 10%;
 }
 
-.navbar-right {
-  float: right !important;
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
 }
-
-
