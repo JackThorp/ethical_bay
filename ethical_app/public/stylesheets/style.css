@@ -77,13 +77,35 @@
 }
 
 .navbar-label {
-  font-size: 1.5em;	
+  margin: 0;
 }
 .content-body {
   margin-top: 50px;
 }
 
 /* GENERAL STYLES FOR HEADINGS AND LISTS */
+
+h1 {
+  font-size: 4.5em;
+  text-align: center;
+  max-height: 100%;
+  left: 0;
+  right: 0;
+  font-family: "Courier New";
+  border-bottom-color: #ccc;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-family: "Courier New";
+  font-weight: lighter;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.brand {
+  display: inline;
+}
 
 .page-header {
   text-align: center;
