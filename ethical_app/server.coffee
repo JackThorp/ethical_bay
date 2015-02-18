@@ -1,8 +1,9 @@
-fs = require 'fs'
-path = require 'path'
-jade = require 'jade'
-express = require 'express'
-markdown = (require 'markdown').markdown
+fs        = require 'fs'
+path      = require 'path'
+jade      = require 'jade'
+express   = require 'express'
+stylus    = require 'stylus'
+markdown  = (require 'markdown').markdown
 
 JADE_DIR = path.join __dirname, 'views'
 PUBLIC_DIR = path.join __dirname, 'public'
@@ -48,6 +49,14 @@ if !module.parent?
   app.get '/', (req, res) ->
     res.redirect '/pages/home'
   app.get '/pages/:name', tools.servePage
+  app.use stylus.middleware
+    src:  __dirname + '/views'
+    dest: __dirname + '/public'
+    compile:  (str, path) ->
+      stylus(str)
+        .set 'filename', path
+        .set 'compress', false
+  
   app.use express.static PUBLIC_DIR
   app.listen (PORT = 3000), (err) ->
     if err? then console.error err

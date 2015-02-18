@@ -1,75 +1,11 @@
 doctype html
 html(lang='en')
   head
-    title ethicalbay, an online marketplace for ethical producers and consumers.
-    meta(charset='utf-8')
-    meta(name='viewport', content="width=device-width, initial-scale=1, user-scalable=no")
-    meta(http-equiv="X-UA-Compatible" content="IE=edge,chrome=1")
-    meta(name='description', content="Presentation and sign up for an online cooperative, ethical market place.")
-    meta(name='keywords', content="ethicalbay,ethical,market,cooperative,producers,consumers,marketplace,values,trade,sustainable,partnership")
-    meta(name='author', content="Jack Thorp")
-    script(src="https://code.jquery.com/jquery-1.11.1.min.js")
-    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css")
-    link(rel='stylesheet', href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css")
-    script(src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js")
-    link(rel='icon', type='image/png', href='/images/ethicalbay_favicon.png')
+    include head.jade
 
-
-    block stylesheets
-    block header_scripts
-    
-    // My global style sheet
-    link(rel='stylesheet', href='/stylesheets/style.css')
-    script(src='/js/ga.js')
   body
-    nav.navbar.navbar-default.navbar-fixed-top(role='navigation')
-      .container-fluid#nav-container
-        .navbar-header
-          button.navbar-toggle(type="button", data-toggle="collapse", data-target=".navbar-collapse")
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          a.navbar-brand.navbar-label(href='/pages/home.html')
-            span.lblue 
-              h3.brand e
-            span.lgreen 
-              h3.brand t
-            span.red 
-              h3.brand h
-            span.blue 
-              h3.brand i
-            span.green 
-              h3.brand c
-            span.orange 
-              h3.brand a
-            span.purple 
-              h3.brand l
-            span.lblue 
-              h3.brand Bay
-        
-        .navbar-collapse.collapse#nav-collapse-1
-          ul.nav.navbar-nav.navbar-right
-            li
-              a(href="/pages/sign-up_form.html")
-                span.lblue
-                  h3.navbar-label Join
-            li
-              a(href="/pages/about.html")
-                span.lblue
-                  h3.navbar-label About
-            li
-              a(href="/blog/index.html")
-                span.lblue
-                  h3.navbar-label Blog
-            li
-              a(href="/pages/values.html")
-                span.lblue 
-                  h3.navbar-label Values
-            li
-              a(href="/pages/links.html")
-                span.lblue
-                  h3.navbar-label Links
-
+    include header.jade
 
     block content
+
+    include footer.jade

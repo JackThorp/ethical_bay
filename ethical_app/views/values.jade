@@ -1,7 +1,7 @@
 extends partials/layout
 
 block content
-  .container-fluid.content-body
+  .container.content-body
     .row
       .col-sm-10.col-sm-offset-1.col-xs-12
         h1.page-header.green Co-operative Principles
@@ -36,6 +36,6 @@ block content
                 h2 Concern for Community
                 p.principle-p Co-operatives work for the sustainable development of their communities through policies approved by their members.
 
-block stylesheets
+append stylesheets
   link(rel='stylesheet', href='/stylesheets/values.css')
 

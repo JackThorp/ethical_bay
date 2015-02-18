@@ -1,6 +1,6 @@
 extends partials/layout
 
 block content
-  h1= err_message
-  //h2= error.status
-  // pre #{error.stack}
+  .container.content-body
+    h1 Oh Dear! Looks like we have an Error.
+    != err_message

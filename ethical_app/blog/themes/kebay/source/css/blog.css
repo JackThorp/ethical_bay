@@ -1,0 +1,30 @@
+.meta-elements {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.entry-meta-header .date {
+  font-weight: bold;
+  font-size: 120%;
+}
+
+.post .entry-title {
+  font-weight: bold;
+  font-size: 220%;
+  margin: 0;
+}
+
+.article-title {
+  color: black;
+}
+
+.entry-title {
+  margin-bottom: 1em;
+}
+
+.article-divider {
+  width: 8%;
+  margin: 5em auto;
+  border: 0;
+  border-top: 5px solid #ddd;
+}

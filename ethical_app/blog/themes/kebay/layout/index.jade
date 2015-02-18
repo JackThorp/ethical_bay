@@ -1,0 +1,55 @@
+extends ../../../../views/partials/layout.jade
+
+block head_title
+  title
+    if config.subtitle
+      = config.title + ' | ' + config.subtitle
+    else
+      = config.title
+
+block head_descriptions
+  if config.description
+    meta(name='description', content=config.description)
+
+block content
+  .container.content-body
+    .row
+      .col-sm-10.col-sm-offset-1.col-xs-12
+        h1.page-header.blue Blog
+
+        .article-list
+          - page.posts.each(function(item) {
+            .row
+              .col-sm-2.col-xs-12
+                .rounded-12.bracket-content-frame.blue_bg
+                  .rounded-12.frame-content.white_bg
+                    footer.entry-meta-header
+                      span.meta-elements.date
+                        time(datetime=item.date.toDate().toISOString())
+                          = item.date.format(config.date_format)
+                      span.meta-elements.author
+                        if item.author 
+                          = item.author
+                        else
+                          = config.author
+
+              .col-sm-10.col-xs-12
+                .rounded-24.bracket-content-frame.blue_bg
+                  .rounded-24.frame-content.white_bg
+                    header.entry-header
+                      h2.entry-title
+                        a.article-title(href=config.root + item.path)= item.title
+                    .entry-content
+                      != item.content
+                    .entry-footer
+                      .entry-meta-footer
+                        span.category
+                          //include post.
+                        span.tags
+              
+            .row
+              hr.article-divider
+          -});
+
+append stylesheets
+  link(rel='stylesheet' href='css/blog.css')

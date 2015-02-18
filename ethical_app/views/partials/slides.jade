@@ -1,6 +1,6 @@
 extends layout
 
-block stylesheets
+append stylesheets
   
   link(rel='stylesheet', media='screen', href='/deckjs/core/deck.core.css')         
   link(rel='stylesheet', media='screen', href="/deckjs/extensions/navigation/deck.navigation.css")
@@ -9,14 +9,13 @@ block stylesheets
   link(rel='styelsheet', media='print', href="/deckjs/core/print.css")
 
 
-block header_scripts
+append header_scripts
   // Required modeniser file.
   script(type='application/javascript', src="/deckjs/modernizr.custom.js")
   script(type='application/javascript', src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js")
 
 
-block content
- 
+block content 
   // Page header±
   .deck-container
     section.slide

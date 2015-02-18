@@ -1,0 +1,31 @@
+// != unescaped buffered code. Will allow html
+extends ../../../../views/partials/layout.jade
+
+//prepend window_title
+//  = page.title
+//  &mdash;
+
+append stylesheets
+  link(rel='stylesheet' href='/blog/css/blog.css')
+
+block content
+  .container.content-body
+    .row
+      .col-sm-10.col-sm-offset-1.col-xs-12
+        h1.page-header= page.title
+
+        article(class=page.layout)
+          footer.entry-meta-header
+            span.meta-elements.date
+              time(datetime=page.date.toDate().toISOString())
+                = page.date.format(config.date_format)
+            span.meta-elements.author
+              if page.author
+                = page.author
+              else
+                = config.author
+            
+          .rounded-48.bracket-content-frame.blue_bg
+            .rounded-24.content-holder
+              != page.content
+
