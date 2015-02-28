@@ -1,5 +1,14 @@
+*
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+
+.link:hover
+  background-color: #04945d
+
 .navbar-default
-  background-color:#fffb19
+  background-color: #fff
+  background-image: none
   
 .white_bg
   background-color:#fff
@@ -83,24 +92,51 @@ h1
   border-bottom-color: #ccc
 
 h2
-  margin-top: 1em
   font-size: 2.25em
   text-align: center
-  //font-weight: bold
-  padding-top: 1em
-  padding-bottom: 1em
+  padding-bottom:0.5em
   font-family: "Courier New"
    
 h3
   font-size: 1.75em
-  font-family:'Muli',sans-serif
+  font-family:  'Muli',sans-serif 
   font-weight:lighter
   text-align:center
   
 p
-  font-family: "Georgia"
-  padding-bottom: 1.4em
-  text-align: justify
+  font-family: "Helvetica Neue", Helvetica, Ariel, sans-serif
+  font-size: 1.2em
+  //text-align: justify
+  
+#wrapper
+  max-width: 60em
+  margin 0 auto
+
+#list
+  width 103.125%
+  overflow hidden
+  margin-left -1.562%
+  margin-bottom -1.875em
+
+.item 
+  float: left
+  width: 30.303%
+  margin: 0 1.515% 1.875em
+
+@media only screen and ( max-width: 40em ) /* 640px */
+  .item
+    width: 46.876% /* 305px */
+    margin-bottom: 0.938em /* 15px */
+      
+@media only screen and ( max-width: 20em ) /* 640px */
+  #list
+    width: 100%
+    margin-left: 0
+  
+  .item
+    width: 100%
+    margin-left: 0
+    margin-right: 0
 
 @media screen and (max-width: 720px)
   h1
@@ -117,16 +153,13 @@ p
 
 @media screen and (max-width: 640px)
   h1
-    font-size: 2.5em
+    font-size: 2.75em
 
   h2
-    font-size: 1.75em
+    font-size: 1.8em
 
   h3
     font-size: 1.25em
-
-  p
-    font-size: 1.0em
 
 
 .brand
@@ -160,7 +193,7 @@ p
   padding:1% 10%
   
 .frame-content
-  padding:2% 10%
+  padding:2% 5%
   max-width:100%
   margin-left:auto
   margin-right:auto
@@ -186,6 +219,8 @@ p
 .text-section
   text-align:justify
 
+.center-text
+  text-align: center
 
 ul.no-marker 
   list-style-type: none

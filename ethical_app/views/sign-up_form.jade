@@ -12,42 +12,61 @@ block content
         .rounded-48.bracket-content-frame.bracket-frame-border.lblue_bg
           .rounded-24.content-holder
             p For more information, subscribe to our mailing list and stay posted! 
-            form.validate#mc-embedded-subscribe-form(action="//ethicalbay.us9.list-manage.com/subscribe/post?u=5016cb7738a96883cbcd4eec2&amp;id=f0668f6c23", method="post", name="mc-embedded-subscribe-form", target="_blank", novalidate)
-            
+
+            form.validate#mc-embedded-subscribe-form(action="//ethicalbay.us9.list-manage.com/subscribe/post?u=5016cb7738a96883cbcd4eec2&amp;id=f0668f6c23" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate)  
               .mergeTable#mergeTable
-              
-                .mergeRow
-                  label(for="mce-EMAIL") Email Address 
-                    span.asterix *
+                .indicates-required
+                  span.asterisk * indicates required
+                  
+                .mc-field-group
+                  label(for="mce-EMAIL") Email Address
+                    span.asterisk *
                   .field-group
-                    input(type="email", name="EMAIL", value="")
-              
-                .mergeRow
-                  label(for="mce-FNAME") First Name 
+                    input(type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL")
+                                  
+                .mc-field-group
+                  label(for="mce-FNAME") First Name
                   .field-group
-                    input(type="text", name="FNAME", value="", class="")
-              
-                .mergeRow
-                  label(for="mce-LNAME") Last Name 
+                    input(type="text" value="" name="FNAME" class="" id="mce-FNAME")
+                
+                .mc-field-group
+                  label(for="mce-LNAME") Last Name
                   .field-group
-                    input(type="text", name="SNAME", value="", class="")
-              
+                    input(type="text" value="" name="LNAME" class="" id="mce-LNAME")
+                                        
+                .mc-field-group.input-group
+                  strong Interest
+                  ul
+                    li
+                      input(type="checkbox" value="1" name="group[17881][1]" id="mce-group[17881]-17881-0")
+                      label(for="mce-group[17881]-17881-0") Buyer
+                    li
+                      input(type="checkbox" value="2" name="group[17881][2]" id="mce-group[17881]-17881-1")
+                      label(for="mce-group[17881]-17881-1") Seller
+                    li
+                      input(type="checkbox" value="4" name="group[17881][4]" id="mce-group[17881]-17881-2")
+                      label(for="mce-group[17881]-17881-2") Partner  
+                    li
+                      input(type="checkbox" value="8" name="group[17881][8]" id="mce-group[17881]-17881-3")
+                      label(for="mce-group[17881]-17881-3") Supporter
+
                 .clear#mce-responses
                   .response#mce-error-response(style="display:none")
                   .response#mce-success-response(style="display:none")
-              
-              // Real people should not fill this in and expect good things.
-              .hidden-from-view
-                input(type="text", name="b_5016cb7738a96883cbcd4eec2_f0668f6c23", tabindex="-1" value="")
+                      
+                // Real people should not fill this in and expect good things.
+                .hidden-from-view
+                  input(type="text", name="b_5016cb7738a96883cbcd4eec2_f0668f6c23", tabindex="-1" value="")
 
-              .submit-container.clear
-                input.button(type="submit", name="submit", value="Subscribe")
+                .submit-container.clear
+                  input.button(type="submit", name="submit", value="Subscribe")
 
   script(type='text/javascript', src='https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js')
   script(type='text/javascript').
     (function($) {
       window.fnames = new Array();
       window.ftypes = new Array();
+
       fnames[0]='EMAIL';
       ftypes[0]='email';
       fnames[1]='FNAME';
@@ -57,3 +76,4 @@ block content
     }
     (jQuery));
     var $mcj = jQuery.noConflict(true);
+

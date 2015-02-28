@@ -131,6 +131,7 @@ task 'compile-jade', ['clean-public-pages'], ->
       [[],[]])
   for jf in jFiles
     jadePath = path.join JADE_DIR, jf
+    log jadePath
     htmlFile = "#{jf.match(/([^/]+)\.jade$/)[1]}.html"
     htmlPath = path.join PUBLIC_DIR, 'pages', htmlFile
     htmlContent = compileTools.compileJade jadePath
